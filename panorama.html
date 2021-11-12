@@ -45,12 +45,12 @@
       infospot2.position.set( 5000.00, -2845.21, -4630.07 );
       infospot2.addHoverText( 'Test Infospot' );
 
-      panorama = new PANOLENS.VideoPanorama( 'asset/video1.mp4', { autoplay: true, muted: true } );
-      panorama.add(infospot);
-      panorama.add(infospot1);
+      panorama1 = new PANOLENS.VideoPanorama( 'asset/video1.mp4', { autoplay: true, muted: true } );
+      panorama1.add(infospot);
+      panorama1.add(infospot1);
 
-      panorama1 = new PANOLENS.ImagePanorama( 'asset/panorama.jpg' );
-      panorama1.add(infospot2);
+      panorama = new PANOLENS.ImagePanorama( 'asset/panorama.jpg' );
+      panorama.add(infospot2);
       
 
       viewer = new PANOLENS.Viewer({controlBar: true, output: 'console'});
